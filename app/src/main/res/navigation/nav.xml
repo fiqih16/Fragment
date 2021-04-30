@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/home2">
+
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.example.fragment.home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home2_to_plane"
+            app:destination="@id/plane" />
+        <action
+            android:id="@+id/action_home2_to_hotel"
+            app:destination="@id/hotel" />
+    </fragment>
+    <fragment
+        android:id="@+id/plane"
+        android:name="com.example.fragment.plane"
+        android:label="fragment_plane"
+        tools:layout="@layout/fragment_plane" />
+    <fragment
+        android:id="@+id/hotel"
+        android:name="com.example.fragment.hotel"
+        android:label="fragment_hotel"
+        tools:layout="@layout/fragment_hotel" />
+</navigation>
